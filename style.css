@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background: #1e1e39;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.header {
+  height: 50px;
+  text-align: center;
+  color: #e65b87;
+  background: #100f22;
+  width: 100%;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.todoList {
+  display: flex;
+}
+
+.item {
+  margin: 80px auto 0;
+}
+
+.box {
+  text-align: center;
+  padding: 30px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.list-stars {
+  display: flex;
+  gap: 7px;
+  justify-content: space-between;
+}
+
+.list-stars p {
+  margin: 20px 0;
+  width: 15px;
+  height: 15px;
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5e5e5;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.list-stars p:hover {
+  background: #dea5b7;
+  color: #fff;
+}
+
+.list-stars .active {
+  background: #e65b87;
+  color: #fff;
+}
+
+.action {
+  position: relative;
+  display: flex;
+}
+
+.action input {
+  width: 100%;
+  padding: 13px 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline-color: #e65b87;
+}
+
+.action button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 7px 12px;
+  background: #e65b87;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.box .warning {
+  display: none;
+  margin-top: 10px;
+  color: #e65b87;
+}
+
+.item .row {
+  margin: 16px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+#list li {
+  font-weight: 600;
+  position: relative;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+#list {
+  margin-top: 30px;
+}
+
+#list .numbers {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -10px;
+  left: -10px;
+  background: #e65b87;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+#list .list-action {
+  color: #722872;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+
+.question {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.question i {
+  color: #fff;
+  padding: 7px;
+  font-size: 22px;
+}
